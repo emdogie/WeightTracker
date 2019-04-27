@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2DX-wK-jgx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeightTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-wg-K4G" userLabel="Middle Container">
+                                <rect key="frame" x="37.5" y="258.5" width="300" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-RT-7fG" userLabel="Weight Image">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graphIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-4Y-M6o" userLabel="Graph Image">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NeB-9s-5z0"/>
+                                    <constraint firstAttribute="height" constant="150" id="jsN-QX-f3d"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi1-5D-8lk">
+                                <rect key="frame" x="95" y="121" width="193" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Afg-wg-K4G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5H7-hI-GGb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pi1-5D-8lk" secondAttribute="trailing" constant="71" id="BJc-sz-ScI"/>
+                            <constraint firstItem="pi1-5D-8lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="dRL-q0-vBG"/>
+                            <constraint firstItem="Afg-wg-K4G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eU8-9i-t8T"/>
+                            <constraint firstItem="Afg-wg-K4G" firstAttribute="top" secondItem="pi1-5D-8lk" secondAttribute="bottom" constant="101.5" id="hMM-02-NFS"/>
+                            <constraint firstItem="pi1-5D-8lk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="57" id="qfr-m5-S03"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S4d-kC-Fv0"/>
+                    <connections>
+                        <outlet property="graphIcon" destination="XJ6-4Y-M6o" id="kBz-Mb-v3t"/>
+                        <outlet property="weightIcon" destination="cPu-RT-7fG" id="YzU-jj-OcM"/>
+                        <segue destination="l0G-oA-uYQ" kind="show" identifier="goToWeights" id="jQ3-Ez-WzO"/>
+                        <segue destination="zY5-Lc-gJ4" kind="show" identifier="goToGraph" id="l0f-mT-l4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="-564.46776611694156"/>
+        </scene>
+        <!--Graph-->
+        <scene sceneID="L53-gj-ofv">
+            <objects>
+                <viewController id="zY5-Lc-gJ4" userLabel="Graph" customClass="GraphViewController" customModule="WeightTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="56h-lO-ZH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oiu-Wy-s45"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aac-dq-3pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-883.80809595202402"/>
+        </scene>
+        <!--Weights-->
+        <scene sceneID="kVO-1C-vo1">
+            <objects>
+                <tableViewController id="l0G-oA-uYQ" userLabel="Weights" customClass="WeightsTableViewController" customModule="WeightTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KvY-g8-EIo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" id="vRY-Jz-uR8">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRY-Jz-uR8" id="k2s-kR-bFv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="l0G-oA-uYQ" id="euy-yV-SUp"/>
+                            <outlet property="delegate" destination="l0G-oA-uYQ" id="EAF-7K-byR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Weight Tracker" id="7J1-5f-tlE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="48D-jX-QVB">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="l0G-oA-uYQ" id="IxP-fP-jLs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNu-vP-w8V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="-223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WCU-Qi-Xbn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2DX-wK-jgx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ks4-ne-rp3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EGr-ys-es7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRu-Gs-xPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="graphIcon" width="75" height="75"/>
+        <image name="weightIcon" width="341" height="341"/>
+    </resources>
+</document>

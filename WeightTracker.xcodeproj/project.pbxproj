@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54036B2019AA931BECE3EEF4 /* Pods_WeightTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A1F9AD6ECFA2D332810F83 /* Pods_WeightTracker.framework */; };
 		EA979DEB2274DB9D00ECBEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979DEA2274DB9D00ECBEC6 /* AppDelegate.swift */; };
 		EA979DED2274DB9D00ECBEC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979DEC2274DB9D00ECBEC6 /* ViewController.swift */; };
 		EA979DF02274DB9D00ECBEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA979DEE2274DB9D00ECBEC6 /* Main.storyboard */; };
 		EA979DF22274DBA600ECBEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA979DF12274DBA600ECBEC6 /* Assets.xcassets */; };
 		EA979DF52274DBA600ECBEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA979DF32274DBA600ECBEC6 /* LaunchScreen.storyboard */; };
+		EA979E012274DD9D00ECBEC6 /* WeightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E002274DD9D00ECBEC6 /* WeightsTableViewController.swift */; };
+		EA979E052274EAF000ECBEC6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E042274EAF000ECBEC6 /* GraphViewController.swift */; };
+		EA979E082274EBD300ECBEC6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E062274EBD200ECBEC6 /* Realm.framework */; };
+		EA979E092274EBD300ECBEC6 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E062274EBD200ECBEC6 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA979E0A2274EBD300ECBEC6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E072274EBD300ECBEC6 /* RealmSwift.framework */; };
+		EA979E0B2274EBD300ECBEC6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E072274EBD300ECBEC6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA979E0F2274ECD500ECBEC6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E0E2274ECD500ECBEC6 /* Data.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA979E0C2274EBD300ECBEC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA979E0B2274EBD300ECBEC6 /* RealmSwift.framework in Embed Frameworks */,
+				EA979E092274EBD300ECBEC6 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		587B5EDD2A97C8BD5EF484CD /* Pods-WeightTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.debug.xcconfig"; path = "Target Support Files/Pods-WeightTracker/Pods-WeightTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		95A1F9AD6ECFA2D332810F83 /* Pods_WeightTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeightTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8F0F8793D19A236E51CFA4 /* Pods-WeightTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeightTracker.release.xcconfig"; path = "Target Support Files/Pods-WeightTracker/Pods-WeightTracker.release.xcconfig"; sourceTree = "<group>"; };
 		EA979DE72274DB9D00ECBEC6 /* WeightTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA979DEA2274DB9D00ECBEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA979DEC2274DB9D00ECBEC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,11 @@
 		EA979DF12274DBA600ECBEC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA979DF42274DBA600ECBEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA979DF62274DBA600ECBEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA979E002274DD9D00ECBEC6 /* WeightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightsTableViewController.swift; sourceTree = "<group>"; };
+		EA979E042274EAF000ECBEC6 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		EA979E062274EBD200ECBEC6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		EA979E072274EBD300ECBEC6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		EA979E0E2274ECD500ECBEC6 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +60,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA979E0A2274EBD300ECBEC6 /* RealmSwift.framework in Frameworks */,
+				EA979E082274EBD300ECBEC6 /* Realm.framework in Frameworks */,
+				54036B2019AA931BECE3EEF4 /* Pods_WeightTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21887413E36A70BDEE392D99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				587B5EDD2A97C8BD5EF484CD /* Pods-WeightTracker.debug.xcconfig */,
+				DE8F0F8793D19A236E51CFA4 /* Pods-WeightTracker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FFA1588758F9508F0134C90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95A1F9AD6ECFA2D332810F83 /* Pods_WeightTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA979DDE2274DB9D00ECBEC6 = {
 			isa = PBXGroup;
 			children = (
+				EA979E062274EBD200ECBEC6 /* Realm.framework */,
+				EA979E072274EBD300ECBEC6 /* RealmSwift.framework */,
 				EA979DE92274DB9D00ECBEC6 /* WeightTracker */,
 				EA979DE82274DB9D00ECBEC6 /* Products */,
+				21887413E36A70BDEE392D99 /* Pods */,
+				3FFA1588758F9508F0134C90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +110,49 @@
 		EA979DE92274DB9D00ECBEC6 /* WeightTracker */ = {
 			isa = PBXGroup;
 			children = (
-				EA979DEA2274DB9D00ECBEC6 /* AppDelegate.swift */,
-				EA979DEC2274DB9D00ECBEC6 /* ViewController.swift */,
-				EA979DEE2274DB9D00ECBEC6 /* Main.storyboard */,
-				EA979DF12274DBA600ECBEC6 /* Assets.xcassets */,
-				EA979DF32274DBA600ECBEC6 /* LaunchScreen.storyboard */,
 				EA979DF62274DBA600ECBEC6 /* Info.plist */,
+				EA979DFF2274DC0700ECBEC6 /* Supporting Files */,
+				EA979DFE2274DBE700ECBEC6 /* Controller */,
+				EA979DFD2274DBE100ECBEC6 /* View */,
+				EA979DFC2274DBBB00ECBEC6 /* Model */,
 			);
 			path = WeightTracker;
+			sourceTree = "<group>";
+		};
+		EA979DFC2274DBBB00ECBEC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA979E0E2274ECD500ECBEC6 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA979DFD2274DBE100ECBEC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA979DEE2274DB9D00ECBEC6 /* Main.storyboard */,
+				EA979DF32274DBA600ECBEC6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA979DFE2274DBE700ECBEC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA979DEA2274DB9D00ECBEC6 /* AppDelegate.swift */,
+				EA979DEC2274DB9D00ECBEC6 /* ViewController.swift */,
+				EA979E002274DD9D00ECBEC6 /* WeightsTableViewController.swift */,
+				EA979E042274EAF000ECBEC6 /* GraphViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EA979DFF2274DC0700ECBEC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA979DF12274DBA600ECBEC6 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA979DF92274DBA600ECBEC6 /* Build configuration list for PBXNativeTarget "WeightTracker" */;
 			buildPhases = (
+				C7691021D6B15EA476B117E9 /* [CP] Check Pods Manifest.lock */,
 				EA979DE32274DB9D00ECBEC6 /* Sources */,
 				EA979DE42274DB9D00ECBEC6 /* Frameworks */,
 				EA979DE52274DB9D00ECBEC6 /* Resources */,
+				EA979E0C2274EBD300ECBEC6 /* Embed Frameworks */,
+				EA979E0D2274EBEC00ECBEC6 /* ShellScript */,
+				1581CDC02BA139DB71191BA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +225,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1581CDC02BA139DB71191BA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WeightTracker/Pods-WeightTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7691021D6B15EA476B117E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeightTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA979E0D2274EBEC00ECBEC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA979DE32274DB9D00ECBEC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA979DED2274DB9D00ECBEC6 /* ViewController.swift in Sources */,
+				EA979E0F2274ECD500ECBEC6 /* Data.swift in Sources */,
+				EA979E052274EAF000ECBEC6 /* GraphViewController.swift in Sources */,
 				EA979DEB2274DB9D00ECBEC6 /* AppDelegate.swift in Sources */,
+				EA979E012274DD9D00ECBEC6 /* WeightsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +442,15 @@
 		};
 		EA979DFA2274DBA600ECBEC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587B5EDD2A97C8BD5EF484CD /* Pods-WeightTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6X3XZMN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WeightTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +465,15 @@
 		};
 		EA979DFB2274DBA600ECBEC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8F0F8793D19A236E51CFA4 /* Pods-WeightTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J6X3XZMN7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WeightTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
