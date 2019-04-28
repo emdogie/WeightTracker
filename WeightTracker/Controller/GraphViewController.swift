@@ -8,37 +8,38 @@
 
 import UIKit
 import RealmSwift
-import SwiftCharts
+import Charts
 class GraphViewController: UIViewController {
 
+    @IBOutlet weak var lineChart: LineChartView!
     var weightsArray: Results<Data>?
     let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-
-        let chartConfig = ChartConfigXY(
-            xAxisConfig: ChartAxisConfig(from: 2, to: 14, by: 2),
-            yAxisConfig: ChartAxisConfig(from: 0, to: 14, by: 2)
-        )
-        
-        let frame = CGRect(x: 0, y: 70, width: 300, height: 500)
-        
-        let chart = LineChart(
-            frame: frame,
-            chartConfig: chartConfig,
-            xTitle: "X axis",
-            yTitle: "Y axis",
-            
-            lines: [
-                (chartPoints: [(2.0, 10.6), (4.2, 5.1), (7.3, 3.0), (8.1, 5.5), (14.0, 8.0)], color: UIColor.red)
-            ]
-        )
-        
-        self.view.addSubview(chart.view)
+        setChartValue()
+        print(weightsArray!)
     }
     
+    func setChartValue() {
+        
+        guard let count = weightsArray?.count else {fatalError()}
+        print(count)
+        
+        let values = (0...count-1).map {(i)->ChartDataEntry in
+            return ChartDataEntry(x: Double(i), y: Double(weightsArray![i].weight)!)
+        }
+        
+        let set1 = LineChartDataSet(entries: values, label: "Your weight")
+        set1.colors = [NSUIColor.green]
+        set1.circleColors = [NSUIColor.green]
+        let data = LineChartData(dataSet: set1)
+        lineChart.tintColor = UIColor.green
+        self.lineChart.data = data
+        
+        
+    }
     func loadData() {
         weightsArray = realm.objects(Data.self)
     }
