@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import ChameleonFramework
 class ViewController: UIViewController {
 
     @IBOutlet weak var graphIcon: UIImageView!
     @IBOutlet weak var weightIcon: UIImageView!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var graphLabel: UILabel!
     
     override func viewDidLoad() {
         
@@ -22,6 +24,14 @@ class ViewController: UIViewController {
         let tapGestureGraphIcon = UITapGestureRecognizer(target: self, action: #selector(ViewController.graphIconTapped(gesture:)))
         graphIcon.addGestureRecognizer(tapGestureGraphIcon)
         graphIcon.isUserInteractionEnabled = true
+        view.backgroundColor = UIColor(gradientStyle: UIGradientStyle.leftToRight, withFrame: view.frame, andColors: [ UIColor.flatPowderBlue(), UIColor.flatWhite()])
+        weightLabel.textColor = UIColor(gradientStyle: UIGradientStyle.topToBottom, withFrame: view.frame, andColors: [ UIColor.flatBlue(), UIColor.flatWhite()])
+        graphLabel.textColor = UIColor(gradientStyle: UIGradientStyle.leftToRight, withFrame: view.frame, andColors: [ UIColor.flatBlue(), UIColor.flatWhite()])
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlue()
         
     }
     

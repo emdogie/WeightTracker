@@ -17,21 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graphIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-4Y-M6o" userLabel="Graph Image">
-                                <rect key="frame" x="64" y="119" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graphIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-4Y-M6o" userLabel="Graph Image">
+                                <rect key="frame" x="112" y="489" width="150" height="138"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="Sov-qT-4aL"/>
+                                    <constraint firstAttribute="width" constant="150" id="zB9-a9-y0o"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-RT-7fG" userLabel="Weight Image">
-                                <rect key="frame" x="64" y="367" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-RT-7fG" userLabel="Weight Image">
+                                <rect key="frame" x="112" y="156" width="150" height="150"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Db5-S6-JBE"/>
+                                    <constraint firstAttribute="height" constant="150" id="MV7-vJ-tU1"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graph" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-CA-BsJ">
+                                <rect key="frame" x="145" y="424" width="84" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="0XC-4w-w69"/>
+                                    <constraint firstAttribute="height" constant="35" id="Nr7-oO-qgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExR-Ua-ob0">
+                                <rect key="frame" x="141" y="336" width="93" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6x8-Yh-B5n"/>
+                                    <constraint firstAttribute="width" constant="93" id="XP2-7g-dst"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="ExR-Ua-ob0" secondAttribute="bottom" constant="296" id="0zL-XW-PhS"/>
+                            <constraint firstItem="cPu-RT-7fG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="6MY-S3-JWW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cPu-RT-7fG" secondAttribute="bottom" constant="361" id="7da-Pj-VQo"/>
+                            <constraint firstItem="XJ6-4Y-M6o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="FYd-Xd-uvr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XJ6-4Y-M6o" secondAttribute="trailing" constant="97" id="Ip8-1Q-tor"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cPu-RT-7fG" secondAttribute="trailing" constant="97" id="JkA-D5-8c0"/>
+                            <constraint firstItem="XJ6-4Y-M6o" firstAttribute="top" secondItem="t4l-CA-BsJ" secondAttribute="bottom" constant="30" id="KKB-5L-lux"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XJ6-4Y-M6o" secondAttribute="bottom" constant="40" id="OKN-oC-hat"/>
+                            <constraint firstItem="ExR-Ua-ob0" firstAttribute="top" secondItem="cPu-RT-7fG" secondAttribute="bottom" constant="30" id="Wt6-qM-EJL"/>
+                            <constraint firstItem="ExR-Ua-ob0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="125" id="YXh-T4-kd2"/>
+                            <constraint firstItem="t4l-CA-BsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="129" id="jX7-OV-RaM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t4l-CA-BsJ" secondAttribute="trailing" constant="130" id="osj-NX-CzV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ExR-Ua-ob0" secondAttribute="trailing" constant="125" id="qWo-AW-Mbj"/>
+                            <constraint firstItem="XJ6-4Y-M6o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="373" id="x6s-VE-sVF"/>
+                            <constraint firstItem="cPu-RT-7fG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="zri-VF-hVf"/>
+                            <constraint firstItem="t4l-CA-BsJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="308" id="zuE-RC-z0b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weight Tracker" id="S4d-kC-Fv0">
@@ -39,7 +81,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="graphIcon" destination="XJ6-4Y-M6o" id="kBz-Mb-v3t"/>
+                        <outlet property="graphLabel" destination="t4l-CA-BsJ" id="EGC-LJ-uQL"/>
                         <outlet property="weightIcon" destination="cPu-RT-7fG" id="YzU-jj-OcM"/>
+                        <outlet property="weightLabel" destination="ExR-Ua-ob0" id="hkQ-5T-DBO"/>
                         <segue destination="l0G-oA-uYQ" kind="show" identifier="goToWeights" id="jQ3-Ez-WzO"/>
                         <segue destination="zY5-Lc-gJ4" kind="show" identifier="goToGraph" id="l0f-mT-l4P"/>
                     </connections>
@@ -58,6 +102,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxl-Op-EXO" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="16" y="159" width="343" height="472"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No data yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wK-eo-ish">
+                                        <rect key="frame" x="41" y="207" width="260" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -75,6 +128,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lineChart" destination="Yxl-Op-EXO" id="5fc-T1-cDK"/>
+                        <outlet property="textLabel" destination="5wK-eo-ish" id="kMZ-q8-zEI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aac-dq-3pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -90,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" id="vRY-Jz-uR8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" id="vRY-Jz-uR8" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRY-Jz-uR8" id="k2s-kR-bFv">
@@ -125,6 +179,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ks4-ne-rp3">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -137,8 +194,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="graphIcon" width="75" height="75"/>
-        <image name="weightIcon" width="62" height="70"/>
+        <image name="graphIcon" width="124" height="138"/>
+        <image name="weightIcon" width="61" height="69"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

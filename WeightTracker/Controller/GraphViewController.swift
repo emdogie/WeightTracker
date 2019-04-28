@@ -12,24 +12,31 @@ import Charts
 import ChameleonFramework
 class GraphViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var lineChart: LineChartView!
     var weightsArray: Results<Data>?
     let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
-        setChartValue()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlue()
+        loadData()
+        if weightsArray!.count > 0 {
+            setChartValue()
+            textLabel.isHidden = true
+        }
+        else {
+            textLabel.isHidden = false
+            lineChart.noDataText = ""
+        }
     }
     
     func setChartValue() {
         
         guard let count = weightsArray?.count else {fatalError()}
-        print(count)
         
         let values = (0...count-1).map {(i)->ChartDataEntry in
             return ChartDataEntry(x: Double(i), y: Double(weightsArray![i].weight)!)
