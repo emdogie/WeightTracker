@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weight Tracker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeightTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,43 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-wg-K4G" userLabel="Middle Container">
-                                <rect key="frame" x="37.5" y="258.5" width="300" height="150"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-RT-7fG" userLabel="Weight Image">
-                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graphIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-4Y-M6o" userLabel="Graph Image">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graphIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-4Y-M6o" userLabel="Graph Image">
+                                <rect key="frame" x="64" y="119" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="NeB-9s-5z0"/>
-                                    <constraint firstAttribute="height" constant="150" id="jsN-QX-f3d"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi1-5D-8lk">
-                                <rect key="frame" x="95" y="121" width="193" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weightIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-RT-7fG" userLabel="Weight Image">
+                                <rect key="frame" x="64" y="367" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Afg-wg-K4G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5H7-hI-GGb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pi1-5D-8lk" secondAttribute="trailing" constant="71" id="BJc-sz-ScI"/>
-                            <constraint firstItem="pi1-5D-8lk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="79" id="dRL-q0-vBG"/>
-                            <constraint firstItem="Afg-wg-K4G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eU8-9i-t8T"/>
-                            <constraint firstItem="Afg-wg-K4G" firstAttribute="top" secondItem="pi1-5D-8lk" secondAttribute="bottom" constant="101.5" id="hMM-02-NFS"/>
-                            <constraint firstItem="pi1-5D-8lk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="57" id="qfr-m5-S03"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="S4d-kC-Fv0"/>
+                    <navigationItem key="navigationItem" title="Weight Tracker" id="S4d-kC-Fv0">
+                        <barButtonItem key="backBarButtonItem" title=" " id="kwA-g6-6bO"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="graphIcon" destination="XJ6-4Y-M6o" id="kBz-Mb-v3t"/>
                         <outlet property="weightIcon" destination="cPu-RT-7fG" id="YzU-jj-OcM"/>
@@ -73,15 +56,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxl-Op-EXO" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="97" width="343" height="472"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yxl-Op-EXO" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="159" width="343" height="472"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yxl-Op-EXO" firstAttribute="top" secondItem="56h-lO-ZH9" secondAttribute="topMargin" constant="43" id="3Jv-D4-6by"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Yxl-Op-EXO" secondAttribute="bottom" constant="36" id="8wK-oM-jMX"/>
+                            <constraint firstItem="Yxl-Op-EXO" firstAttribute="leading" secondItem="56h-lO-ZH9" secondAttribute="leadingMargin" id="KgO-RH-J0g"/>
+                            <constraint firstItem="oiu-Wy-s45" firstAttribute="trailing" secondItem="Yxl-Op-EXO" secondAttribute="trailing" constant="16" id="w4p-bh-xzh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oiu-Wy-s45"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Graph" id="W9o-PB-plJ">
+                        <barButtonItem key="backBarButtonItem" title="back" id="YwO-d5-Or1"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lineChart" destination="Yxl-Op-EXO" id="5fc-T1-cDK"/>
                     </connections>
@@ -106,6 +97,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -113,7 +105,7 @@
                             <outlet property="delegate" destination="l0G-oA-uYQ" id="EAF-7K-byR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Weight Tracker" id="7J1-5f-tlE">
+                    <navigationItem key="navigationItem" title="Your weights" id="7J1-5f-tlE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="48D-jX-QVB">
                             <connections>
                                 <action selector="addButtonTapped:" destination="l0G-oA-uYQ" id="IxP-fP-jLs"/>
@@ -130,8 +122,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2DX-wK-jgx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ks4-ne-rp3">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ks4-ne-rp3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -146,6 +138,7 @@
     </scenes>
     <resources>
         <image name="graphIcon" width="75" height="75"/>
-        <image name="weightIcon" width="341" height="341"/>
+        <image name="weightIcon" width="62" height="70"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import Charts
+import ChameleonFramework
 class GraphViewController: UIViewController {
 
     @IBOutlet weak var lineChart: LineChartView!
@@ -19,7 +20,10 @@ class GraphViewController: UIViewController {
         super.viewDidLoad()
         loadData()
         setChartValue()
-        print(weightsArray!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = UIColor.flatPowderBlue()
     }
     
     func setChartValue() {
@@ -32,10 +36,10 @@ class GraphViewController: UIViewController {
         }
         
         let set1 = LineChartDataSet(entries: values, label: "Your weight")
-        set1.colors = [NSUIColor.green]
-        set1.circleColors = [NSUIColor.green]
+        set1.colors = [NSUIColor.flatPowderBlue()]
+        set1.circleColors = [NSUIColor.flatPowderBlue()]
         let data = LineChartData(dataSet: set1)
-        lineChart.tintColor = UIColor.green
+        lineChart.tintColor = UIColor.flatPowderBlue()
         self.lineChart.data = data
         
         
