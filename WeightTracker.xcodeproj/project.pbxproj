@@ -11,7 +11,6 @@
 		EA979DEB2274DB9D00ECBEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979DEA2274DB9D00ECBEC6 /* AppDelegate.swift */; };
 		EA979DED2274DB9D00ECBEC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979DEC2274DB9D00ECBEC6 /* ViewController.swift */; };
 		EA979DF02274DB9D00ECBEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA979DEE2274DB9D00ECBEC6 /* Main.storyboard */; };
-		EA979DF22274DBA600ECBEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA979DF12274DBA600ECBEC6 /* Assets.xcassets */; };
 		EA979DF52274DBA600ECBEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA979DF32274DBA600ECBEC6 /* LaunchScreen.storyboard */; };
 		EA979E012274DD9D00ECBEC6 /* WeightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E002274DD9D00ECBEC6 /* WeightsTableViewController.swift */; };
 		EA979E052274EAF000ECBEC6 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E042274EAF000ECBEC6 /* GraphViewController.swift */; };
@@ -20,6 +19,7 @@
 		EA979E0A2274EBD300ECBEC6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E072274EBD300ECBEC6 /* RealmSwift.framework */; };
 		EA979E0B2274EBD300ECBEC6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA979E072274EBD300ECBEC6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA979E0F2274ECD500ECBEC6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA979E0E2274ECD500ECBEC6 /* Data.swift */; };
+		EAE0C1D122779C57008E4CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA979DF12274DBA600ECBEC6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -217,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA979DF52274DBA600ECBEC6 /* LaunchScreen.storyboard in Resources */,
-				EA979DF22274DBA600ECBEC6 /* Assets.xcassets in Resources */,
+				EAE0C1D122779C57008E4CCB /* Assets.xcassets in Resources */,
 				EA979DF02274DB9D00ECBEC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski.WeightTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -485,7 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.marekgarczewski.WeightTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
